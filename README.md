@@ -12,9 +12,9 @@ npm install -g nodemon
 
 ### HOW TO START SERVER SIDE:
 
-2. `cd .\MusicSocialWeb\`
-3. `cd .\server\`
+2. `cd .\MXERMusicApp-Backend\`
 4. `git pull origin main`
+4. `npm i`
 5. `nodemon index.js`
 
 ## CommandLine / Terminal Instructions for Git below:
