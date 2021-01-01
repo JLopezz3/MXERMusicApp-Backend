@@ -10,8 +10,10 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
-app.get('/api/v1/get', (req, res) =>{
-  const sql = 'SELECT * FROM Song.users;';
+
+//get all users
+app.get('/get', (req, res) =>{
+  const sql = 'SELECT * FROM Song.users where user_id =1;';
   const query = db.query(sql, (err, results) => {
       if(err) throw err;
       console.log(results);
@@ -22,6 +24,7 @@ app.get('/api/v1/get', (req, res) =>{
       
   });
 });
+//get user=1
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on port ${PORT}`);
