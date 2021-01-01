@@ -6,10 +6,5 @@ const db = mysql.createConnection({
   database: "Song",
 });
 
-db.connect(function (err) {
-  if (err) throw err;
-  console.log("Connected!");
-  db.end();
-});
 
 module.exports = db;
