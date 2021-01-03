@@ -51,7 +51,7 @@ app.post("/login", (req, res) => {
 
 // get all users
 app.get("/get", (req, res) => {
-  const sql = "SELECT * FROM Song.users where user_id =1;";
+  const sql = "SELECT * FROM Song.users;";
   const query = db.query(sql, (err, results) => {
     if (err) throw err;
     console.log(results);
